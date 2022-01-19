@@ -1,33 +1,27 @@
 Hooks.once("dragRuler.ready", (SpeedProvider) => {
-    class WrathandGlorySpeedProvider extends SpeedProvider {
+    class WnGSpeedProvider extends SpeedProvider {
         get colors() {
             return [
-                {id: "crawl", default: 0xFFFF00, name: "foundryvtt-wng-speed-provider.speeds.crawl"},
-                {id: "standard", default: 0x00FF00, name: "foundryvtt-wng-speed-provider.speeds.standard"},
-                {id: "run", default: 0x0000FF, name: "foundryvtt-wng-speed-provider.speeds.run"},
-                {id: "sprint", default: 0xFFFF00, name: "foundryvtt-wng-speed-provider.speeds.sprint"},
-
-
-                {id: "swim", default: 0xFFFF00, name: "foundryvtt-wng-speed-provider.speeds.swim"},
-                {id: "fly", default: 0xFFFF00, name: "foundryvtt-wng-speed-provider.speeds.fly"},
-                {id: "climb", default: 0xFFFF00, name: "foundryvtt-wng-speed-provider.speeds.climb"},
-                {id: "stealth", default: 0xFF8000, name: "foundryvtt-wng-speed-provider.speeds.stealth"},
+                {id: "crawl", default: 0xFFFF00, name: "Crawl"},
+                {id: "standard", default: 0x00FF00, name: "Standard"},
+                {id: "run", default: 0x0000FF, name: "Run"},
+                {id: "sprint", default: 0xFFFF00, name: "Sprint"},
+                {id: "swim", default: 0xFFFF00, name: "Swim"},
+                {id: "fly", default: 0xFFFF00, name: "Fly"},
+                {id: "climb", default: 0xFFFF00, name: "Climb"},
+                {id: "stealth", default: 0xFF8000, name: "Stealth"},
             ]
         }
 
         getRanges(token) {
-            const baseSpeed = token.data.data.combat.speed
+            const baseSpeed = token.actor.data.data.combat.speed
             //const fly = actor.data.data.combat.fly
             let ranges = []
-            let condmod = 1
-            let canmove = {
-                crawl: true, standard: true, run: true, sprint: true, swim: false, fly: false, climb: false, stealth: false
-            }
-
             ranges.push({range: baseSpeed / 2, color: "crawl"})
             ranges.push({range: baseSpeed, color: "standard"})
             ranges.push({range: baseSpeed * 2, color: "run"})
             ranges.push({range: baseSpeed * 3, color: "sprint"})
+            console.log(ranges)
             return ranges
             //if (fly > 0){
             //    canmove.fly = true
@@ -77,5 +71,5 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
         }
     }
 
-    dragRuler.registerModule("foundryvtt-wng-speed-provider", WnGSpeedProvider)
+    dragRuler.registerModule("wng-dragruler", WnGSpeedProvider)
 })
