@@ -1,0 +1,48 @@
+{
+  "name": "wng-dragruler",
+  "title": "Wrath and Glory Drag Ruler Integration",
+  "description": "A Drag Ruler speed provider for the Wrath and Glory game system.",
+  "authors": [
+    {
+      "name": "Jeffry Hysong",
+      "email": "foundry@maelstrom.dev",
+      "url": "https://projects.maelstrom.dev/foundry",
+      "discord": "Malvok#1288"
+    },
+    {
+      "name": "Manuel Vögele",
+      "email": "develop@manuel-voegele.de",
+      "discord": "Stäbchenfisch#5107"
+    }
+  ],
+  "version": "1.0.0",
+  "minimumCoreVersion": "9.242.0",
+  "compatibleCoreVersion": "9",
+  "url": "https://github.com/Maelstrom-Development/wng-dragruler",
+  "manifest": "",
+  "download": "",
+  "license": "https://github.com/Maelstrom-Development/wng-dragruler/blob/main/LICENSE",
+  "readme": "https://github.com/Maelstrom-Development/wng-dragruler/blob/main/README.md",
+  "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
+  "allowBugReporter": true,
+  "dependencies": [
+    {
+      "name": "foundryvtt-drag-ruler",
+      "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
+    },
+    {
+      "name": "wrath-and-glory",
+      "type": "system"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "scripts": [
+    "scripts/wng-speed-provider.js"
+  ]
+}
