@@ -38,7 +38,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             let jumppack = {range: landSpeed * 2, color: "jumppack"}
             // Stealth movement cost added in condition check
             let stealth = {range: landSpeed / 2, color: "stealth"}
-            let fulldefence = {range: Math.max(landSpeed, flySpeed) / 2, color: "fulldefence"}
+            let fulldefence = {range: landSpeed / 2, color: "fulldefence"}
             let charge = {range: landSpeed * 2, color: "charge"}
             // Assuming a token can use its fly speed when climbing
             let climb = {range: landSpeed / 2, color: "climb"}
