@@ -26,6 +26,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
                 itemlist.push(f?.data.name)
             }
             // Check terrain environment under token for swimming
+            // TODO: replace canvas.terrain.terrainFromPixels with canvas.terrain.terrainFromGrid
             let terrain = canvas.terrain.terrainFromPixels(token.data.x, token.data.y) ?? [{environment: {id: ""}}]
             // Range types
             let crawl = {range: landSpeed / 2, color: "crawl"}
