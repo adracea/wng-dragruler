@@ -20,14 +20,19 @@
       "name": "Manuel Vögele",
       "email": "develop@manuel-voegele.de",
       "discord": "Stäbchenfisch#5107"
+    },
+    {
+      "name": "IronMonk",
+      "discord": "ironmonk88#4075",
+      "patreon": "https://www.patreon.com/ironmonk"
     }
   ],
-  "version": "1.0.0",
+  "version": "2.0.0",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9.242",
   "url": "https://github.com/Maelstrom-Development/wng-dragruler",
-  "manifest": "",
-  "download": "",
+  "manifest": "https://github.com/Maelstrom-Development/wng-dragruler/blob/master/module.json",
+  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.0/wng-dragruler.zip",
   "license": "https://github.com/Maelstrom-Development/wng-dragruler/blob/main/LICENSE",
   "readme": "https://github.com/Maelstrom-Development/wng-dragruler/blob/main/README.md",
   "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
@@ -36,6 +41,14 @@
     {
       "name": "drag-ruler",
       "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
+    },
+    {
+      "name": "terrain-ruler",
+      "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-terrain-ruler/master/module.json"
+    },
+    {
+      "name": "enhanced-terrain-layer",
+      "manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json"
     },
     {
       "name": "wrath-and-glory",
