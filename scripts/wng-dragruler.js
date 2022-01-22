@@ -27,7 +27,15 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             }
             // Check terrain environment under token for swimming
             // TODO: replace canvas.terrain.terrainFromPixels with canvas.terrain.terrainFromGrid
-            let terrain = canvas.terrain.terrainFromPixels(token.data.x, token.data.y) ?? [{environment: {id: ""}}]
+            console.log("Loading terrain type...")
+            let terrainDefault = [{environment: {id: "global"}}]
+            let terrainName = "global"
+            //if ('id' in canvas.terrain.terrainFromPixels(token.data.x, token.data.y)[0]?.environment) {
+            terrainName = canvas.terrain?.terrainFromPixels(token.data.x, token.data.y)[0]?.environment?.id ?? "unknown"
+            console.log("Terrain type is", terrainName)
+            //} else {
+                console.log("Terrain type is", terrainName)
+            //}
             // Range types
             let crawl = {range: landSpeed / 2, color: "crawl"}
             let standard = {range: landSpeed, color: "standard"}
@@ -102,7 +110,8 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
                 }
                 return ranges
             }
-            if (terrain[0]?.environment.id === "water") {
+            //if (terrain[0]?.environment?.id === "water") {
+            if (terrainName === "water") {
                 ranges = [
                     swim
                 ]
