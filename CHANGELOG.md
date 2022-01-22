@@ -1,3 +1,6 @@
+Release v2.0.4
+Fixed incorrect module.json links
+
 v2.0.3
 Fixed incorrect more module.json links
 
