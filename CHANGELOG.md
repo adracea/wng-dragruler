@@ -1,5 +1,8 @@
+v2.0.3
+Fixed incorrect more module.json links
+
 v2.0.2
-Fixed incorrect module.json links
+Fixed incorrect more module.json links
 
 v2.0.1
 Removed flySpeed from fulldefence range speed calculation
