@@ -14,7 +14,8 @@
       "name": "Jeffry Hysong",
       "email": "foundry@maelstrom.dev",
       "url": "https://projects.maelstrom.dev/foundry",
-      "discord": "Malvok#1288"
+      "discord": "Malvok#1288",
+      "maelstrom-discord": "https://discord.gg/ubDtKjzMvX"
     },
     {
       "name": "Manuel Vögele",
@@ -27,15 +28,15 @@
       "patreon": "https://www.patreon.com/ironmonk"
     }
   ],
-  "version": "2.0.5",
+  "version": "2.0.6",
   "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9.242",
+  "compatibleCoreVersion": "9.245",
   "system": "wrath-and-glory",
   "url": "https://github.com/Maelstrom-Development/wng-dragruler",
-  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.5/module.json",
-  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.5/wng-dragruler-v2.0.5.zip",
-  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.5/LICENSE",
-  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.5/README.md",
+  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.6/module.json",
+  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.6/wng-dragruler-v2.0.6.zip",
+  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.6/LICENSE",
+  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.6/README.md",
   "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
   "allowBugReporter": true,
   "dependencies": [
