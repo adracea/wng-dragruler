@@ -17,6 +17,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
                 {id: "climb", default: 0xB45205, name: "Climb"}
             ]
         }
+
         getRanges(token) {
             let landSpeed = token.actor.data.data.combat.speed
             let flySpeed = token.actor.data.data.combat.fly
@@ -28,13 +29,13 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             // Check terrain environment under token for swimming
             // TODO: replace canvas.terrain.terrainFromPixels with canvas.terrain.terrainFromGrid
             console.log("Loading terrain type...")
-            let terrainDefault = [{environment: {id: "global"}}]
-            let terrainName = "global"
+            //let terrainDefault = [{environment: {id: "global"}}]
+            //let terrainName = "global"
             //if ('id' in canvas.terrain.terrainFromPixels(token.data.x, token.data.y)[0]?.environment) {
-            terrainName = canvas.terrain?.terrainFromPixels(token.data.x, token.data.y)[0]?.environment?.id ?? "unknown"
-            console.log("Terrain type is", terrainName)
+            let terrainName = canvas.terrain?.terrainFromPixels(token.data.x, token.data.y)[0]?.environment?.id ?? "global"
+            //console.log("Terrain type is", terrainName)
             //} else {
-                console.log("Terrain type is", terrainName)
+            console.log("Terrain type is", terrainName)
             //}
             // Range types
             let crawl = {range: landSpeed / 2, color: "crawl"}
@@ -43,7 +44,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             let sprint = {range: landSpeed * 3, color: "sprint"}
             // Assuming 'water' terrain environment is x2 movement cost.
             let swim = {range: landSpeed, color: "swim"}
-            let fly = {range:  Math.max(landSpeed, flySpeed), color: "fly"}
+            let fly = {range: flySpeed, color: "fly"}
             let jumppack = {range: landSpeed * 2, color: "jumppack"}
             // Stealth movement cost added in condition check
             let stealth = {range: landSpeed / 2, color: "stealth"}
@@ -101,8 +102,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
                         fallback
                     ]
                 } else {
-                    ranges = [
-                    ]
+                    ranges = []
                 }
                 if (itemlist.indexOf("Jump Pack") >= 0) {
                     ranges.push(jumppack)
@@ -127,13 +127,11 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
                 return ranges
             }
             if (token.actor.hasCondition("restrained")) {
-                ranges = [
-                ]
+                ranges = []
                 return ranges
             }
             if (token.actor.hasCondition("all-out-attack")) {
-                ranges = [
-                ]
+                ranges = []
                 return ranges
             }
             if (token.actor.hasCondition("full-defence")) {
@@ -145,5 +143,6 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             return ranges
         }
     }
+
     dragRuler.registerModule("wng-dragruler", WnGSpeedProvider)
 })
