@@ -1,13 +1,31 @@
-Release v2.0.4
-Fixed incorrect module.json links
+### v2.0.9
 
-v2.0.3
-Fixed incorrect more module.json links
+#### Fixed
+- 'Walk vs standard' error in the exhausted condition movement range calculation.
+- Edited README.md
 
-v2.0.2
-Fixed incorrect more module.json links
+### v2.0.4
 
-v2.0.1
-Removed flySpeed from fulldefence range speed calculation
-Added wng system to manifest and removed it from dependencies
-Edited formatting of README.md
+#### Fixed
+
+- Incorrect module.json links
+
+### v2.0.3
+
+#### Fixed
+
+- Incorrect module.json links
+
+### v2.0.2
+
+#### Fixed
+
+- Incorrect module.json links
+
+### v2.0.1
+
+#### Fixed
+
+- Removed Fly speed from 'Full Defence' range speed calculation
+- Added wng system to manifest and removed it from dependencies
+- Edited formatting of README.md

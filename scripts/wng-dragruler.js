@@ -74,7 +74,7 @@ Hooks.once("dragRuler.ready", (SpeedProvider) => {
             if (token.actor.hasCondition("exhausted")) {
                 ranges = [
                     crawl,
-                    walk,
+                    standard,
                     fallback
                 ]
                 return ranges

@@ -28,15 +28,15 @@
       "patreon": "https://www.patreon.com/ironmonk"
     }
   ],
-  "version": "2.0.8",
+  "version": "2.0.9",
   "minimumCoreVersion": "9",
   "compatibleCoreVersion": "9.249",
   "system": "wrath-and-glory",
   "url": "https://github.com/Maelstrom-Development/wng-dragruler",
-  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.8/module.json",
-  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.8/wng-dragruler-v2.0.8.zip",
-  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.8/LICENSE",
-  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.8/README.md",
+  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.9/module.json",
+  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.9/wng-dragruler-v2.0.9.zip",
+  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.9/LICENSE",
+  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.9/README.md",
   "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
   "allowBugReporter": true,
   "dependencies": [
