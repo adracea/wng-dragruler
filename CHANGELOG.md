@@ -1,3 +1,6 @@
+### v2.0.10
+-   Updated for Foundry VTT v9.255
+
 ### v2.0.9
 
 #### Fixed
