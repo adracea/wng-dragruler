@@ -1,5 +1,5 @@
 {
-  "name": "wng-dragruler",
+  "id": "wng-dragruler",
   "title": "Wrath and Glory Drag Ruler Integration",
   "description": "A Drag Ruler speed provider for the Wrath and Glory game system.",
   "languages": [
@@ -28,15 +28,17 @@
       "patreon": "https://www.patreon.com/ironmonk"
     }
   ],
-  "version": "2.0.12",
-  "minimumCoreVersion": "9",
-  "compatibleCoreVersion": "9.269",
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.291"
+  },
   "system": "wrath-and-glory",
   "url": "https://github.com/Maelstrom-Development/wng-dragruler",
-  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.12/module.json",
-  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v2.0.12/wng-dragruler-v2.0.12.zip",
-  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.12/LICENSE",
-  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v2.0.12/README.md",
+  "manifest": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v3.0.0/module.json",
+  "download": "https://github.com/Maelstrom-Development/wng-dragruler/releases/download/v3.0.0/wng-dragruler-v3.0.0.zip",
+  "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v3.0.0/LICENSE",
+  "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v3.0.0/README.md",
   "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
   "allowBugReporter": true,
   "dependencies": [
@@ -53,7 +55,7 @@
       "manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json"
     }
   ],
-  "scripts": [
-    "scripts/wng-dragruler.js"
+  "esmodules": [
+    "modules/wng-dragruler.js"
   ]
 }

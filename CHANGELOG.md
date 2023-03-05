@@ -1,3 +1,9 @@
+### v3.0.0
+- Foundry VTT v10 Compoliance
+- Massive Simplification
+- Added check for dying and dead conditions
+- Removal of old commented out lines
+
 ### v2.0.12
 - Corrected version error
 
