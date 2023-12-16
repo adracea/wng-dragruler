@@ -40,21 +40,26 @@
   "license": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v3.0.0/LICENSE",
   "readme": "https://raw.githubusercontent.com/Maelstrom-Development/wng-dragruler/v3.0.0/README.md",
   "bugs": "https://github.com/Maelstrom-Development/wng-dragruler/issues",
-  "allowBugReporter": true,
-  "dependencies": [
+  "allowBugReporter": true,	
+  "relationships": {
+		"requires": [
+			{
+				"id": "enhanced-terrain-layer",
+				"type": "module",
+				"manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json"
+			},
     {
-      "name": "drag-ruler",
+      "id": "drag-ruler",
+				"type": "module",
       "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-drag-ruler/master/module.json"
     },
     {
-      "name": "terrain-ruler",
+      "id": "terrain-ruler",
+				"type": "module",
       "manifest": "https://raw.githubusercontent.com/manuelVo/foundryvtt-terrain-ruler/master/module.json"
-    },
-    {
-      "name": "enhanced-terrain-layer",
-      "manifest": "https://github.com/ironmonk88/enhanced-terrain-layer/releases/latest/download/module.json"
     }
-  ],
+		]
+	},
   "esmodules": [
     "modules/wng-dragruler.js"
   ]
